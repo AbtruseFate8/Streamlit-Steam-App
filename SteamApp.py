@@ -22,7 +22,11 @@ mpl.rc('font', **font)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Clean and Prepare Data
-df = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam.csv")
+
+df_url = 'https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/92dd4f76697d73a279ac93fbb30887b53d2df244/steam.csv'
+df = pd.read_csv(df_url, index_col= 0)
+
+#df = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam.csv")
 df_desc = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_description_data.csv")
 df_images = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_media_data.csv")
 
