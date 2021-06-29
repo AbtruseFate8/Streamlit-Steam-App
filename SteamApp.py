@@ -23,12 +23,21 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Clean and Prepare Data
 
-df_url = 'https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/92dd4f76697d73a279ac93fbb30887b53d2df244/steam.csv'
+
+df_url = 'https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/92dd4f76697d73a279ac93fbb30887b53d2df244/steam.csv?raw=true'
 df = pd.read_csv(df_url, index_col= 0)
 
+df_desc_url = "https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/57960bea5a34b707b59b37ddd99257b6d7495dbc/steam_description_data.csv?raw=true"
+df_desc = pd.read_csv(df_desc_url, index_col = 0)
+
+df_images_url = "https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/57960bea5a34b707b59b37ddd99257b6d7495dbc/steam_media_data.csv?raw=true"
+df_images = pd.read_csv(df_images_url, index_col = 0)
+
+
+
 #df = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam.csv")
-df_desc = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_description_data.csv")
-df_images = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_media_data.csv")
+#df_desc = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_description_data.csv")
+#df_images = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_media_data.csv")
 
 
 # Link description to each game
