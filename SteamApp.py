@@ -33,8 +33,6 @@ df_desc = pd.read_csv(df_desc_url, index_col = 0)
 df_images_url = "https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/57960bea5a34b707b59b37ddd99257b6d7495dbc/steam_media_data.csv?raw=true"
 df_images = pd.read_csv(df_images_url, index_col = 0)
 
-
-
 #df = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam.csv")
 #df_desc = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_description_data.csv")
 #df_images = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_media_data.csv")
@@ -302,7 +300,7 @@ from pathlib import Path
 def read_markdown_file(markdown_file):
     return Path(markdown_file).read_text()
 
-About = read_markdown_file(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\About.md")
+About = read_markdown_file(r"https://github.com/AbtruseFate8/Streamlit-Steam-App/blob/69bad8d7bedb07cdf55ad91a155ccc54a8a385f8/About.md")
 
 # Recommendation Engine
 
