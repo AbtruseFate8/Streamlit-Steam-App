@@ -25,13 +25,13 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
 df_url = 'https://raw.githubusercontent.com/AbtruseFate8/Streamlit-Steam-App/92dd4f76697d73a279ac93fbb30887b53d2df244/steam.csv'
-df = pd.read_csv(df_url, index_col= 0)
+df = pd.read_csv(df_url, index_col= 0, error_bad_lines=False)
 
 df_desc_url = "https://raw.githubusercontent.com/AbtruseFate8/Streamlit-Steam-App/57960bea5a34b707b59b37ddd99257b6d7495dbc/steam_description_data.csv"
-df_desc = pd.read_csv(df_desc_url, index_col = 0)
+df_desc = pd.read_csv(df_desc_url, index_col = 0, error_bad_lines=False)
 
 df_images_url = "https://raw.githubusercontent.com/AbtruseFate8/Streamlit-Steam-App/57960bea5a34b707b59b37ddd99257b6d7495dbc/steam_media_data.csv"
-df_images = pd.read_csv(df_images_url, index_col = 0)
+df_images = pd.read_csv(df_images_url, index_col = 0, error_bad_lines=False)
 
 #df = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam.csv")
 #df_desc = pd.read_csv(r"C:\Users\Admin\OneDrive\Desktop\Python Scripts\Operations_Analytics\steam_description_data.csv")
